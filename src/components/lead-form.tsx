@@ -144,11 +144,11 @@ export function LeadForm() {
         </p>
       ) : null}
 
-      <div className="flex flex-col gap-2.5 sm:flex-row sm:gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <Button
           type="submit"
           disabled={pending}
-          className="h-12 flex-1 text-[15px] glow-amber"
+          className="h-14 w-full flex-1 gap-2 rounded-xl px-5 text-base font-semibold glow-amber sm:h-12 sm:text-[15px]"
         >
           {pending ? "Sending…" : "Book my free design visit"}
         </Button>
@@ -156,10 +156,10 @@ export function LeadForm() {
           asChild
           type="button"
           variant="secondary"
-          className="h-12 flex-1 text-[15px]"
+          className="h-14 w-full flex-1 gap-2 rounded-xl px-5 text-base font-semibold sm:h-12 sm:text-[15px]"
         >
           <a href={`tel:${site.phoneTel}`}>
-            <Phone className="size-4" />
+            <Phone className="size-5 sm:size-4" />
             Call {site.phoneDisplay}
           </a>
         </Button>

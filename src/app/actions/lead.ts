@@ -39,7 +39,7 @@ export async function submitLead(
     .map((addr) => addr.trim())
     .filter(Boolean);
   const from =
-    process.env.LEAD_FROM_EMAIL ?? "Edge Lighting <onboarding@resend.dev>";
+    process.env.LEAD_FROM_EMAIL ?? "Edge Lighting <leads@knockscout.com>";
   const apiKey = process.env.RESEND_API_KEY;
 
   const summary = [

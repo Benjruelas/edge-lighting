@@ -10,14 +10,21 @@ export function StickyCta() {
         paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom, 0px))",
       }}
     >
-      <div className="mx-auto grid max-w-lg grid-cols-2 gap-2">
-        <Button asChild variant="secondary" className="h-12 text-[15px]">
+      <div className="mx-auto grid max-w-lg grid-cols-2 gap-2.5">
+        <Button
+          asChild
+          variant="secondary"
+          className="h-14 gap-2 rounded-xl px-4 text-base font-semibold"
+        >
           <a href={`tel:${site.phoneTel}`}>
-            <Phone className="size-4" />
+            <Phone className="size-5" />
             Call now
           </a>
         </Button>
-        <Button asChild className="h-12 text-[15px] pulse-glow">
+        <Button
+          asChild
+          className="h-14 rounded-xl px-4 text-base font-semibold pulse-glow"
+        >
           <a href="#design">Get my design</a>
         </Button>
       </div>
