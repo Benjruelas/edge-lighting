@@ -23,6 +23,10 @@ export const viewport = {
   themeColor: "#070708",
 };
 
+const shareTitle = `${site.brand} by ${site.parent} | ${site.tagline}`;
+const shareDescription =
+  "Permanent aluminum-track LED soffit lighting for Mansfield & DFW — installed in one day. Book a free After-Dark Design.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -41,10 +45,17 @@ export const metadata: Metadata = {
     "All Slopes Roofing",
   ],
   openGraph: {
-    title: `${site.brand} by ${site.parent}`,
-    description: site.tagline,
+    title: shareTitle,
+    description: shareDescription,
     type: "website",
     locale: "en_US",
+    siteName: `${site.brand} by ${site.parent}`,
+    url: site.url,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: shareTitle,
+    description: shareDescription,
   },
   icons: {
     icon: [
