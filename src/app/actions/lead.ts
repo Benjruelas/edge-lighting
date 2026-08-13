@@ -34,7 +34,10 @@ export async function submitLead(
     };
   }
 
-  const to = process.env.LEAD_TO_EMAIL ?? site.emailPlaceholder;
+  const to = (process.env.LEAD_TO_EMAIL ?? site.emailPlaceholder)
+    .split(",")
+    .map((addr) => addr.trim())
+    .filter(Boolean);
   const from =
     process.env.LEAD_FROM_EMAIL ?? "Edge Lighting <onboarding@resend.dev>";
   const apiKey = process.env.RESEND_API_KEY;
@@ -66,7 +69,7 @@ export async function submitLead(
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
       from,
-      to: [to],
+      to,
       replyTo: email,
       subject: `Edge Lighting lead: ${firstName} — ${packageInterest || "Design visit"}`,
       text: summary,

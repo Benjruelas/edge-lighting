@@ -11,7 +11,8 @@ export const site = {
   region: "DFW",
   serviceArea:
     "Mansfield, Arlington, Midlothian, Waxahachie, Burleson, Fort Worth, Dallas, and surrounding DFW communities",
-  emailPlaceholder: "leads@allslopesroofingandexteriors.com",
+  emailPlaceholder:
+    "steve@allslopesroofingandexteriors.com,ben@allslopesroofingandexteriors.com",
   owners: ["Steve Ruelas", "Ben Ruelas"],
   monthlyCapacity: 6,
   url: "https://edgelighting.allslopesroofingandexteriors.com",
