@@ -15,5 +15,5 @@ export const site = {
     "steve@allslopesroofingandexteriors.com,ben@allslopesroofingandexteriors.com",
   owners: ["Steve Ruelas", "Ben Ruelas"],
   monthlyCapacity: 6,
-  url: "https://edge-lighting.vercel.app",
+  url: "https://asredgelights.com",
 } as const;
