@@ -12,8 +12,6 @@ export const offer = {
   pricePerFoot: PRICE_PER_FOOT,
   financingNote:
     "As low as ~$99/mo on a typical Street Face package via third-party financing (subject to approval).",
-  paymentTerms:
-    "50% to lock your install date and order color-matched track. 50% due on completion. The After-Dark Design Visit is $0.",
   scarcity:
     "Only 6 Edge Lighting installs per month in DFW. Holiday calendars fill by October.",
 } as const;
@@ -70,13 +68,6 @@ export const bonuses = [
     description:
       "Daytime off-state photos plus a product sheet ready for your HOA board.",
   },
-  {
-    title: "First-Year Night Tune-Up",
-    value: 199,
-    valueLabel: "$199",
-    description:
-      "One complimentary visit in year one to refresh scenes and fine-tune brightness.",
-  },
 ] as const;
 
 export const packages = [
@@ -111,10 +102,10 @@ export const packages = [
 
 export const guarantees = [
   {
-    title: "Free After-Dark Design",
+    title: "Free On-Site Measure",
     type: "Unconditional",
     description:
-      "We map your eaves, recommend the right package, and show you the plan. Don’t love it? You pay nothing.",
+      "We measure your eaves, recommend the right package, and quote the job. Don’t love it? You pay nothing.",
   },
   {
     title: "30-Night Make-It-Right",
@@ -145,15 +136,15 @@ export const guarantees = [
 export const processSteps = [
   {
     step: 1,
-    title: "Book your free design visit",
+    title: "Request your free measure",
     description:
-      "Call or submit the form. We schedule a no-obligation After-Dark Design at your home.",
+      "Call or submit the form. We schedule a no-obligation on-site measure at your home.",
   },
   {
     step: 2,
-    title: "We measure & design",
+    title: "We measure & quote",
     description:
-      "Linear footage, fascia color match, controller placement, and scene recommendations — on site.",
+      "Linear footage, fascia color match, controller placement, and package recommendation — on site.",
   },
   {
     step: 3,
@@ -163,9 +154,9 @@ export const processSteps = [
   },
   {
     step: 4,
-    title: "Night walkthrough",
+    title: "App setup & handoff",
     description:
-      "After dark we dial in brightness and leave you with your 8 scenes ready to run.",
+      "We load your 8 scenes, walk you through the app, and leave you ready to run the system.",
   },
 ] as const;
 
@@ -223,7 +214,7 @@ export const faqs = [
   },
   {
     q: "Can I finance it?",
-    a: "Yes — third-party financing is available for qualified homeowners. A typical Street Face can run as low as about $99/mo depending on terms. We’ll walk you through options on the design visit.",
+    a: "Yes — third-party financing is available for qualified homeowners. A typical Street Face can run as low as about $99/mo depending on terms. We’ll walk you through options when we quote your home.",
   },
   {
     q: "What if a light goes out?",

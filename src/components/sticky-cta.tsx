@@ -25,7 +25,7 @@ export function StickyCta() {
           asChild
           className="h-14 rounded-xl px-4 text-base font-semibold pulse-glow"
         >
-          <a href="#design">Get my design</a>
+          <a href="#design">Get my measure</a>
         </Button>
       </div>
     </div>

@@ -11,7 +11,7 @@ export function Process() {
           <Reveal>
             <SectionHeading
               eyebrow="THE PROCESS"
-              title="From design visit to night walkthrough — usually one day on site."
+              title="From free measure to finished install — usually one day on site."
             />
           </Reveal>
           <Reveal delay={100}>

@@ -14,7 +14,7 @@ import { guarantees } from "@/lib/offer";
 
 const guaranteeIcons: Record<(typeof guarantees)[number]["title"], LucideIcon> =
   {
-    "Free After-Dark Design": PencilRuler,
+    "Free On-Site Measure": PencilRuler,
     "30-Night Make-It-Right": MoonStar,
     "Lifetime Workmanship": Hammer,
     "5-Year Parts": CalendarRange,

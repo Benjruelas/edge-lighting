@@ -88,7 +88,7 @@ export function SiteHeader() {
             </a>
           </Button>
           <Button asChild size="sm" className="glow-amber">
-            <a href="#design">Get my design</a>
+            <a href="#design">Get my measure</a>
           </Button>
         </div>
 
@@ -127,7 +127,7 @@ export function SiteHeader() {
               </Button>
               <Button asChild variant="secondary">
                 <a href="#design" onClick={() => setOpen(false)}>
-                  Get my design
+                  Get my measure
                 </a>
               </Button>
             </div>

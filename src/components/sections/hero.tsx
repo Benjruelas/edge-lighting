@@ -49,7 +49,7 @@ export function Hero() {
               size="lg"
               className="h-12 w-full px-6 text-[15px] pulse-glow sm:w-auto"
             >
-              <a href="#design">Book free After-Dark Design</a>
+              <a href="#design">Get a free measure</a>
             </Button>
             <Button
               asChild
@@ -65,11 +65,11 @@ export function Hero() {
           </div>
           <p className="hero-enter hero-enter-delay-4 mt-4 text-xs leading-relaxed text-muted-foreground/90 sm:mt-5 sm:text-sm">
             <span className="sm:hidden">
-              ${offer.pricePerFoot}/ft all-in · Design visit $0
+              ${offer.pricePerFoot}/ft all-in · Free on-site measure
             </span>
             <span className="hidden sm:inline">
-              {offer.name} · ${offer.pricePerFoot}/ft all-inclusive · Design
-              visit $0
+              {offer.name} · ${offer.pricePerFoot}/ft all-inclusive · Free
+              on-site measure
             </span>
           </p>
         </div>

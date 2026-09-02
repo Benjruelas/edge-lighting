@@ -75,24 +75,14 @@ export function Pricing() {
           </div>
         </Reveal>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <Reveal>
-            <div className="surface-panel p-5 text-sm text-muted-foreground">
-              <div className="relative">
-                <p className="font-medium text-foreground">Payment terms</p>
-                <p className="mt-2">{offer.paymentTerms}</p>
-              </div>
+        <Reveal delay={80}>
+          <div className="mt-6 surface-panel p-5 text-sm text-muted-foreground">
+            <div className="relative">
+              <p className="font-medium text-foreground">Financing</p>
+              <p className="mt-2">{offer.financingNote}</p>
             </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="surface-panel p-5 text-sm text-muted-foreground">
-              <div className="relative">
-                <p className="font-medium text-foreground">Financing</p>
-                <p className="mt-2">{offer.financingNote}</p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
         <p className="mt-6 text-center text-sm text-primary">{offer.scarcity}</p>
       </div>
     </section>

@@ -119,7 +119,7 @@ export function LeadForm() {
         />
         <span>
           I agree to be contacted by phone, text, or email about my free
-          After-Dark Design Visit. Message/data rates may apply. Reply STOP to
+          on-site measure. Message/data rates may apply. Reply STOP to
           opt out. See{" "}
           <a
             href="/privacy"
@@ -150,7 +150,7 @@ export function LeadForm() {
           disabled={pending}
           className="h-14 w-full flex-1 gap-2 rounded-xl px-5 text-base font-semibold glow-amber sm:h-12 sm:text-[15px]"
         >
-          {pending ? "Sending…" : "Book my free design visit"}
+          {pending ? "Sending…" : "Request my free measure"}
         </Button>
         <Button
           asChild

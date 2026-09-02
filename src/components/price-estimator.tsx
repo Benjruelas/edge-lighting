@@ -48,8 +48,8 @@ export function PriceEstimator() {
       <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
         All-inclusive at ${PRICE_PER_FOOT}/ft — track, LEDs, controller,
         color-match, and install. Two-story, steep, or complex hip roofs may
-        adjust after your free measure. Final quote comes from the After-Dark
-        Design Visit.
+        adjust after your free measure. Final quote comes from the on-site
+        measure.
       </p>
     </div>
   );

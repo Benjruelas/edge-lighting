@@ -34,7 +34,8 @@ export default function TermsPage() {
               1. Service area
             </h2>
             <p>
-              {site.serviceArea}. Final eligibility confirmed at the design visit.
+              {site.serviceArea}. Final eligibility confirmed at the on-site
+              measure.
             </p>
           </section>
 
@@ -63,7 +64,10 @@ export default function TermsPage() {
 
           <section className="space-y-2 text-sm leading-relaxed text-muted-foreground">
             <h2 className="font-heading text-2xl text-foreground">3. Payment</h2>
-            <p>{offer.paymentTerms}</p>
+            <p>
+              Payment schedule and accepted methods are confirmed on your signed
+              proposal before materials are ordered.
+            </p>
           </section>
 
           <section className="space-y-4 text-sm leading-relaxed text-muted-foreground">
@@ -93,10 +97,10 @@ export default function TermsPage() {
 
           <section className="space-y-2 text-sm leading-relaxed text-muted-foreground">
             <h2 className="font-heading text-2xl text-foreground">
-              5. Design visit
+              5. On-site measure
             </h2>
             <p>
-              The After-Dark Design Visit is complimentary and carries no
+              The on-site measure and quote are complimentary and carry no
               obligation to purchase. If you decline the proposal, you owe nothing
               for the visit.
             </p>
@@ -120,8 +124,8 @@ export default function TermsPage() {
               7. Capacity &amp; scheduling
             </h2>
             <p>
-              {offer.scarcity} Install dates are confirmed only after deposit and
-              material order.
+              {offer.scarcity} Install dates are confirmed only after a signed
+              proposal and material order.
             </p>
           </section>
 

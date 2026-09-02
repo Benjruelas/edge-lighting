@@ -27,9 +27,9 @@ export function LeadCta() {
       <div className="relative mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-start">
         <Reveal>
           <SectionHeading
-            eyebrow="FREE AFTER-DARK DESIGN"
-            title="Book the visit. Keep the risk on us."
-            description="Tell us about your home. We’ll call to schedule a $0 design visit — measure, recommend a package, and show you the plan. Don’t love it? You pay nothing."
+            eyebrow="FREE ON-SITE MEASURE"
+            title="Get a quote. Keep the risk on us."
+            description="Tell us about your home. We’ll call to schedule a free on-site measure — footage, package recommendation, and a clear quote. Don’t love it? You pay nothing."
           />
           <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
             {[

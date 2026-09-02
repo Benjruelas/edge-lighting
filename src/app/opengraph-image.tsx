@@ -187,7 +187,7 @@ export default async function OpenGraphImage() {
             }}
           >
             <span>${offer.pricePerFoot}/ft all-inclusive</span>
-            <span>Free After-Dark Design</span>
+            <span>Free on-site measure</span>
             <span>{site.phoneDisplay}</span>
           </div>
         </div>

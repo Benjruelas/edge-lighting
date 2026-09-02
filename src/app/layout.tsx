@@ -25,7 +25,7 @@ export const viewport = {
 
 const shareTitle = `${site.brand} by ${site.parent} | ${site.tagline}`;
 const shareDescription =
-  "Permanent aluminum-track LED soffit lighting for Mansfield & DFW — installed in one day. Book a free After-Dark Design.";
+  "Permanent aluminum-track LED soffit lighting for Mansfield & DFW — installed in one day. Get a free on-site measure.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.brand}`,
   },
   description:
-    "Professional aluminum-track LED soffit lighting (edge lighting / jellyfish-style) for Mansfield & DFW. Invisible by day. Unforgettable after dark. Free After-Dark Design.",
+    "Professional aluminum-track LED soffit lighting (edge lighting / jellyfish-style) for Mansfield & DFW. Invisible by day. Unforgettable after dark. Free on-site measure.",
   keywords: [
     "edge lighting",
     "jellyfish lighting",

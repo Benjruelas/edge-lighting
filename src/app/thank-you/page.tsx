@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 import { site } from "@/lib/site";
 
 export const metadata = {
-  title: "Design request received",
+  title: "Measure request received",
 };
 
 export default function ThankYouPage() {
@@ -19,7 +19,7 @@ export default function ThankYouPage() {
             YOU&apos;RE ON THE LIST
           </p>
           <h1 className="mt-3 font-heading text-4xl text-balance">
-            Request received — we&apos;ll confirm your After-Dark Design Visit.
+            Request received — we&apos;ll confirm your free on-site measure.
           </h1>
           <p className="mt-4 text-muted-foreground">
             Expect a call or text from {site.parent} within one business day. Want

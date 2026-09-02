@@ -30,7 +30,7 @@ export async function submitLead(
   if (!smsConsent) {
     return {
       ok: false,
-      message: "Please confirm you agree to be contacted about your design visit.",
+      message: "Please confirm you agree to be contacted about your free measure.",
     };
   }
 
@@ -61,7 +61,7 @@ export async function submitLead(
     return {
       ok: true,
       message:
-        "Got it — we'll confirm your design visit shortly. (Dev mode: email not configured yet.)",
+        "Got it — we'll confirm your free measure shortly. (Dev mode: email not configured yet.)",
     };
   }
 
@@ -71,7 +71,7 @@ export async function submitLead(
       from,
       to,
       replyTo: email,
-      subject: `Edge Lighting lead: ${firstName} — ${packageInterest || "Design visit"}`,
+      subject: `Edge Lighting lead: ${firstName} — ${packageInterest || "Free measure"}`,
       text: summary,
     });
 
@@ -85,7 +85,7 @@ export async function submitLead(
 
     return {
       ok: true,
-      message: "Request received. We'll reach out to schedule your free design visit.",
+      message: "Request received. We'll reach out to schedule your free on-site measure.",
     };
   } catch (err) {
     console.error("[lead:exception]", err);

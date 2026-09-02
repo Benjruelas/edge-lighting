@@ -37,7 +37,7 @@ export default function PrivacyPage() {
           <section className="space-y-2 text-sm leading-relaxed text-muted-foreground">
             <h2 className="font-heading text-xl text-foreground">How we use it</h2>
             <p>
-              We use your information to schedule design visits, prepare estimates,
+              We use your information to schedule on-site measures, prepare estimates,
               perform installations, honor warranties, and send service-related
               communications. We do not sell your personal information.
             </p>
