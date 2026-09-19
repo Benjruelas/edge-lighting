@@ -15,7 +15,7 @@ const problems = [
   },
   {
     title: "Franchise sticker shock",
-    body: "National brands often quote $25–$40/ft — then add $650–$850 for a controller. Same aluminum track idea. Different invoice.",
+    body: "National brands often quote $25–$40/ft — then add $650–$850 for a controller. Edge Lighting is $24.25/ft all-in — the best deal in DFW for the same class of system.",
     visual: "from-orange-900/20 to-transparent",
   },
 ];

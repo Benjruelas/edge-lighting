@@ -1,4 +1,4 @@
-export const PRICE_PER_FOOT = 28;
+export const PRICE_PER_FOOT = 24.25;
 
 export const offer = {
   name: "The After-Dark Curb Appeal System",
@@ -10,6 +10,8 @@ export const offer = {
   starvingCrowd:
     "DFW homeowners who want a home that looks expensive after dark — holidays, Cowboys nights, everyday warm white — without ladders, clip-on lights, or a national-franchise markup.",
   pricePerFoot: PRICE_PER_FOOT,
+  bestDeal:
+    "Best all-in deal in DFW — pro aluminum-track lighting at $24.25/ft with the controller included.",
   financingNote:
     "As low as ~$99/mo on a typical Street Face package via third-party financing (subject to approval).",
   scarcity:
@@ -67,27 +69,30 @@ export const packages = [
   {
     id: "street-face",
     name: "Street Face",
-    priceFrom: 2990,
+    priceFrom: 2590,
     feet: "90–110 ft",
-    description: "The street-facing eave — maximum curb appeal per dollar.",
+    description:
+      "The street-facing eave — maximum curb appeal per dollar, at DFW’s best all-in rate.",
     highlight: false,
     bestFor: "Front-only glow & holiday curb appeal",
   },
   {
     id: "curb-wings",
     name: "Curb + Wings",
-    priceFrom: 4590,
+    priceFrom: 3975,
     feet: "150–170 ft",
-    description: "Front plus the visible side returns that complete the look from the street.",
+    description:
+      "Front plus the visible side returns that complete the look from the street — still the best deal in DFW.",
     highlight: true,
     bestFor: "Most DFW suburban homes",
   },
   {
     id: "whole-home",
     name: "Whole Home Halo",
-    priceFrom: 6490,
+    priceFrom: 5625,
     feet: "220–240 ft",
-    description: "Full perimeter wrap for estates and homeowners who want every angle lit.",
+    description:
+      "Full perimeter wrap for estates and homeowners who want every angle lit — without franchise pricing.",
     highlight: false,
     bestFor: "Full wrap & backyard entertaining",
   },
@@ -156,7 +161,7 @@ export const processSteps = [
 export const comparisons = [
   {
     name: "Edge Lighting by All Slopes",
-    price: "$28/ft all-in",
+    price: "$24.25/ft all-in",
     controller: "Included",
     warranty: "Lifetime workmanship · 5-yr parts",
     who: "Local roofing & soffit crew",
@@ -164,7 +169,7 @@ export const comparisons = [
   },
   {
     name: "National franchise brands",
-    price: "$25–$40/ft",
+    price: "$25–$40/ft + extras",
     controller: "Often $650–$850 extra",
     warranty: "Varies by dealer",
     who: "Franchise dealer network",
@@ -191,15 +196,19 @@ export const comparisons = [
 export const faqs = [
   {
     q: "Is this JellyFish Lighting or Trimlight?",
-    a: "No. Edge Lighting is professional-grade aluminum-track LED soffit lighting installed by All Slopes Roofing & Exteriors — a Mansfield/DFW family company. You get the same clean daytime look and app-controlled night scenes without franchise markup.",
+    a: "No. Edge Lighting is professional-grade aluminum-track LED soffit lighting installed by All Slopes Roofing & Exteriors — a Mansfield/DFW family company. You get the same clean daytime look and app-controlled night scenes without franchise markup — usually the best all-in deal in DFW.",
   },
   {
     q: "How long does installation take?",
     a: "Most single-story Street Face and Curb + Wings jobs finish in one day. Larger Whole Home Halo installs may take 1–2 days depending on footage and roof complexity.",
   },
   {
-    q: "What does $28 per foot include?",
-    a: "Track, LEDs, controller, color-match, labor, app setup, and the full bonus stack listed on this page. Two-story, steep, or complex hip roofs may adjust after the free measure.",
+    q: "What does $24.25 per foot include?",
+    a: "Track, LEDs, controller, color-match, labor, app setup, and the full bonus stack listed on this page — that’s why it’s the best all-in deal in DFW versus franchise quotes that hide controller fees. Two-story, steep, or complex hip roofs may adjust after the free measure.",
+  },
+  {
+    q: "Why is Edge Lighting priced lower than franchise brands?",
+    a: "We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — just $24.25/ft all-in. Same class of aluminum-track system, better DFW value.",
   },
   {
     q: "Can I finance it?",

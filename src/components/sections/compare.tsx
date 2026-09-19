@@ -53,7 +53,8 @@ export function Compare() {
         <Reveal>
           <SectionHeading
             eyebrow="COMPARISON"
-            title="Same dream outcome. Different path — and different risk."
+            title="Same dream outcome. Best deal in DFW."
+            description="Franchise markups vs. a local roofing crew. See why Edge Lighting wins on all-in price."
           />
         </Reveal>
 
@@ -70,7 +71,7 @@ export function Compare() {
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
-                        Best choice
+                        Best deal in DFW
                       </p>
                       <h3 className="font-heading text-xl leading-tight text-foreground">
                         {optionMeta[winner.name].short}
@@ -160,7 +161,7 @@ export function Compare() {
                       vs Edge:{" "}
                       <span className="text-primary">
                         {row.name === "National franchise brands"
-                          ? "controller often extra"
+                          ? "best all-in deal in DFW"
                           : row.name === "DIY kits"
                             ? "you climb the ladder"
                             : "pay again every year"}
@@ -212,7 +213,7 @@ export function Compare() {
                         <span>{row.name}</span>
                         {row.highlight ? (
                           <span className="rounded-full bg-primary px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary-foreground">
-                            You are here
+                            Best deal in DFW
                           </span>
                         ) : null}
                       </span>

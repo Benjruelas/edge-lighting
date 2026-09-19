@@ -17,8 +17,8 @@ export function Pricing() {
         <Reveal>
           <SectionHeading
             eyebrow="PRICING"
-            title="Buy a system — not a commodity foot of LED."
-            description={`Premium to the discounters. Below franchise + controller sticker shock. Transparent DFW pricing at $${offer.pricePerFoot}/ft.`}
+            title="Best all-in deal in DFW — transparent by the foot."
+            description={`$${offer.pricePerFoot}/ft with the controller included. Below franchise sticker shock, without cutting the aluminum-track quality.`}
           />
         </Reveal>
 

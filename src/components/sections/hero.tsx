@@ -41,7 +41,8 @@ export function Hero() {
           </h1>
           <p className="hero-enter hero-enter-delay-3 mt-4 max-w-lg text-[15px] leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
             Aluminum-track LED soffit lighting for Mansfield &amp; {site.region}
-            — installed in one day by a roofing crew.
+            — installed in one day by a roofing crew. Best all-in deal in DFW at
+            ${offer.pricePerFoot}/ft.
           </p>
           <div className="hero-enter hero-enter-delay-4 mt-7 flex w-full flex-col gap-2.5 sm:mt-9 sm:flex-row sm:items-center sm:gap-3">
             <Button
@@ -65,11 +66,11 @@ export function Hero() {
           </div>
           <p className="hero-enter hero-enter-delay-4 mt-4 text-xs leading-relaxed text-muted-foreground/90 sm:mt-5 sm:text-sm">
             <span className="sm:hidden">
-              ${offer.pricePerFoot}/ft all-in · Free on-site measure
+              Best deal in DFW · ${offer.pricePerFoot}/ft all-in · Free measure
             </span>
             <span className="hidden sm:inline">
-              {offer.name} · ${offer.pricePerFoot}/ft all-inclusive · Free
-              on-site measure
+              {offer.name} · Best deal in DFW at ${offer.pricePerFoot}/ft
+              all-inclusive · Free on-site measure
             </span>
           </p>
         </div>

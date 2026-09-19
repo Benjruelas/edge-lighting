@@ -2,8 +2,9 @@ import { site } from "@/lib/site";
 
 const items = [
   "Family-owned Mansfield / DFW",
+  "Best all-in deal in DFW",
   "Roofing + soffit specialists",
-  "$28/ft all-inclusive",
+  "$24.25/ft all-inclusive",
   "Lifetime workmanship",
   `${site.monthlyCapacity} installs / month`,
   "Controller included",

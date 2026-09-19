@@ -22,7 +22,7 @@ export function ValueStack() {
           <SectionHeading
             eyebrow="THE VALUE STACK"
             title={offer.name}
-            description="We don’t discount. We stack value until saying no feels expensive."
+            description={offer.bestDeal}
           />
         </Reveal>
 
