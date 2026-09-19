@@ -57,7 +57,7 @@ export function Gallery() {
             <div className="surface-panel flex h-full flex-col justify-center p-6 sm:p-8">
               <div className="relative">
                 <h3 className="font-heading text-2xl sm:text-3xl">
-                  HOA-friendly by design
+                  Invisible by day
                 </h3>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
                   Powder-coated aluminum track sits under the eave, color-matched
@@ -67,7 +67,7 @@ export function Gallery() {
                 </p>
                 <div className="mt-6 h-px w-full light-line" />
                 <p className="mt-4 text-sm text-primary">
-                  Daytime off-state photos included for your HOA board.
+                  Slim profile. Color-matched. Gone when the lights are off.
                 </p>
               </div>
             </div>

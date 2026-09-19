@@ -105,7 +105,7 @@ export function LeadForm() {
           id="notes"
           name="notes"
           rows={3}
-          placeholder="Two-story, HOA, want Christmas ready by November…"
+          placeholder="Two-story, want Christmas ready by November…"
           className="min-h-24 rounded-xl px-3.5 text-base md:text-sm"
         />
       </div>

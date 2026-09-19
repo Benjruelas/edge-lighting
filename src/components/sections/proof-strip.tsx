@@ -7,7 +7,7 @@ const items = [
   "Lifetime workmanship",
   `${site.monthlyCapacity} installs / month`,
   "Controller included",
-  "HOA-friendly daytime look",
+  "Invisible by day",
   "1-day typical install",
 ];
 

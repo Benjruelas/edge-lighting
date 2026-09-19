@@ -38,7 +38,7 @@ export const bonuses = [
     value: 350,
     valueLabel: "$350",
     description:
-      "Track powder-coated to blend with your fascia so daytime curb appeal stays HOA-clean.",
+      "Track powder-coated to blend with your fascia so daytime curb appeal stays clean.",
   },
   {
     title: "Complimentary Soffit & Fascia Inspection",
@@ -60,13 +60,6 @@ export const bonuses = [
     valueLabel: "$150",
     description:
       "We set up the app on your phone and show you schedules, scenes, and music sync.",
-  },
-  {
-    title: "HOA Spec Sheet",
-    value: 75,
-    valueLabel: "$75",
-    description:
-      "Daytime off-state photos plus a product sheet ready for your HOA board.",
   },
 ] as const;
 
@@ -199,10 +192,6 @@ export const faqs = [
   {
     q: "Is this JellyFish Lighting or Trimlight?",
     a: "No. Edge Lighting is professional-grade aluminum-track LED soffit lighting installed by All Slopes Roofing & Exteriors — a Mansfield/DFW family company. You get the same clean daytime look and app-controlled night scenes without franchise markup.",
-  },
-  {
-    q: "Will my HOA approve it?",
-    a: "Most DFW HOAs approve permanent soffit systems because the slim aluminum track is nearly invisible when lights are off. We include an HOA spec sheet with daytime off-state photos for your board.",
   },
   {
     q: "How long does installation take?",
