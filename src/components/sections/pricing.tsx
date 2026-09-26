@@ -55,7 +55,7 @@ export function Pricing() {
                     {formatUsd(pkg.regularPriceFrom)}
                   </span>{" "}
                   <span className="text-primary/90">
-                    {deal.badge} through {deal.endsLabel}
+                    through {deal.endsLabel}
                   </span>
                 </p>
                 <div className="my-5 h-px w-full light-line opacity-60" />
