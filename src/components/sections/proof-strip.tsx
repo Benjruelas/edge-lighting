@@ -5,7 +5,7 @@ const items = [
   "Family-owned Mansfield / DFW",
   "Best all-in deal in DFW",
   "Roofing + soffit specialists",
-  `$${offer.pricePerFoot}/ft through ${deal.endsLabel}`,
+  `$${offer.pricePerFoot}/ft ${deal.deadlinePhrase}`,
   `Reg. $${offer.regularPricePerFoot}/ft`,
   "Lifetime workmanship",
   `${site.monthlyCapacity} installs / month`,

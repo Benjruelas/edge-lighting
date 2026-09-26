@@ -16,7 +16,7 @@ const problems = [
   },
   {
     title: "Franchise sticker shock",
-    body: `National brands often quote $25–$40/ft — then add $650–$850 for a controller. Edge Lighting is $${offer.regularPricePerFoot}/ft all-in — and through ${deal.endsLabel}, lock in $${offer.pricePerFoot}/ft for the same class of system.`,
+    body: `National brands often quote $25–$40/ft — then add $650–$850 for a controller. Edge Lighting is $${offer.regularPricePerFoot}/ft all-in — and $${offer.pricePerFoot}/ft ${deal.deadlinePhrase} for the same class of system.`,
     visual: "from-orange-900/20 to-transparent",
   },
 ];

@@ -52,9 +52,10 @@ export default function TermsPage() {
               Regular published rate is ${REGULAR_PRICE_PER_FOOT} per linear foot
               of installed lighting, all-inclusive of track, LEDs, controller,
               color-match, labor, and the bonus stack advertised on the website.
-              Through {deal.endsLabel} ({deal.endsOn}), the promotional rate is $
-              {PRICE_PER_FOOT} per linear foot for qualified installs booked
-              under the deal. Package starting prices during the deal:
+              If you order before {deal.endsLabel} ({deal.endsOn}), the
+              promotional rate is ${PRICE_PER_FOOT} per linear foot for
+              qualified installs booked under the deal. Package starting prices
+              during the deal:
             </p>
             <ul className="list-disc space-y-1 pl-5">
               {packages.map((pkg) => (

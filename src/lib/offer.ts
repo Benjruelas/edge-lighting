@@ -1,14 +1,16 @@
 export const REGULAR_PRICE_PER_FOOT = 28;
 export const DEAL_PRICE_PER_FOOT = 24.25;
-/** Active quote rate while the Thanksgiving deal is running. */
+/** Active quote rate while the before-Thanksgiving promo is running. */
 export const PRICE_PER_FOOT = DEAL_PRICE_PER_FOOT;
 
 export const deal = {
   active: true,
+  /** Deadline name shown in UI (order must be placed before this). */
   endsLabel: "Thanksgiving",
   /** ISO date for Thanksgiving 2026 (Thursday, Nov 26). */
   endsOn: "2026-11-26",
-  badge: "Thanksgiving deal",
+  badge: "Order before Thanksgiving",
+  deadlinePhrase: "if you order before Thanksgiving",
   savingsLabel: `Save $${(REGULAR_PRICE_PER_FOOT - DEAL_PRICE_PER_FOOT).toFixed(2)}/ft`,
 } as const;
 
@@ -26,11 +28,11 @@ export const offer = {
   /** Active promotional rate while the deal runs. */
   pricePerFoot: PRICE_PER_FOOT,
   bestDeal:
-    `Normally $${REGULAR_PRICE_PER_FOOT}/ft — lock in $${DEAL_PRICE_PER_FOOT}/ft all-in through ${deal.endsLabel}, controller included.`,
+    `Normally $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft all-in ${deal.deadlinePhrase}, controller included.`,
   financingNote:
     "As low as ~$99/mo on a typical Street Face package via third-party financing (subject to approval).",
   scarcity:
-    `Thanksgiving deal ends ${deal.endsLabel}. Only 6 Edge Lighting installs per month in DFW — holiday calendars fill fast.`,
+    `$${DEAL_PRICE_PER_FOOT}/ft only ${deal.deadlinePhrase}. Only 6 Edge Lighting installs per month in DFW — holiday calendars fill fast.`,
 } as const;
 
 export const coreIncludes = [
@@ -88,7 +90,7 @@ export const packages = [
     regularPriceFrom: 2990,
     feet: "90–110 ft",
     description:
-      "The street-facing eave — maximum curb appeal per dollar, at the Thanksgiving deal rate.",
+      "The street-facing eave — maximum curb appeal per dollar when you order before Thanksgiving.",
     highlight: false,
     bestFor: "Front-only glow & holiday curb appeal",
   },
@@ -99,7 +101,7 @@ export const packages = [
     regularPriceFrom: 4590,
     feet: "150–170 ft",
     description:
-      "Front plus the visible side returns that complete the look from the street — locked in through Thanksgiving.",
+      "Front plus the visible side returns that complete the look from the street — lock it in if you order before Thanksgiving.",
     highlight: true,
     bestFor: "Most DFW suburban homes",
   },
@@ -179,7 +181,7 @@ export const processSteps = [
 export const comparisons = [
   {
     name: "Edge Lighting by All Slopes",
-    price: `$${DEAL_PRICE_PER_FOOT}/ft deal (reg. $${REGULAR_PRICE_PER_FOOT})`,
+    price: `$${DEAL_PRICE_PER_FOOT}/ft before Thanksgiving (reg. $${REGULAR_PRICE_PER_FOOT})`,
     controller: "Included",
     warranty: "Lifetime workmanship · 5-yr parts",
     who: "Local roofing & soffit crew",
@@ -222,11 +224,11 @@ export const faqs = [
   },
   {
     q: `What does $${DEAL_PRICE_PER_FOOT} per foot include?`,
-    a: `Our regular rate is $${REGULAR_PRICE_PER_FOOT}/ft. Through ${deal.endsLabel}, lock in $${DEAL_PRICE_PER_FOOT}/ft all-in — track, LEDs, controller, color-match, labor, app setup, and the full bonus stack. Two-story, steep, or complex hip roofs may adjust after the free measure.`,
+    a: `Our regular rate is $${REGULAR_PRICE_PER_FOOT}/ft. If you order before ${deal.endsLabel}, lock in $${DEAL_PRICE_PER_FOOT}/ft all-in — track, LEDs, controller, color-match, labor, app setup, and the full bonus stack. Two-story, steep, or complex hip roofs may adjust after the free measure.`,
   },
   {
     q: "Why is Edge Lighting priced lower than franchise brands?",
-    a: `We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — regular rate $${REGULAR_PRICE_PER_FOOT}/ft, currently $${DEAL_PRICE_PER_FOOT}/ft through ${deal.endsLabel}. Same class of aluminum-track system, better DFW value.`,
+    a: `We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — regular rate $${REGULAR_PRICE_PER_FOOT}/ft, currently $${DEAL_PRICE_PER_FOOT}/ft ${deal.deadlinePhrase}. Same class of aluminum-track system, better DFW value.`,
   },
   {
     q: "Can I finance it?",

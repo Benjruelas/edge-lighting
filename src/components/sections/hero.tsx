@@ -44,7 +44,7 @@ export function Hero() {
             — installed in one day by a roofing crew. Normally $
             {offer.regularPricePerFoot}/ft —{" "}
             <span className="text-foreground">
-              ${offer.pricePerFoot}/ft through {deal.endsLabel}
+              ${offer.pricePerFoot}/ft {deal.deadlinePhrase}
             </span>
             .
           </p>
@@ -70,13 +70,12 @@ export function Hero() {
           </div>
           <p className="hero-enter hero-enter-delay-4 mt-4 text-xs leading-relaxed text-muted-foreground/90 sm:mt-5 sm:text-sm">
             <span className="sm:hidden">
-              {deal.badge} · ${offer.pricePerFoot}/ft (reg. $
+              ${offer.pricePerFoot}/ft {deal.deadlinePhrase} (reg. $
               {offer.regularPricePerFoot}) · Free measure
             </span>
             <span className="hidden sm:inline">
-              {offer.name} · {deal.badge}: ${offer.pricePerFoot}/ft through{" "}
-              {deal.endsLabel} (reg. ${offer.regularPricePerFoot}/ft) · Free
-              on-site measure
+              {offer.name} · ${offer.pricePerFoot}/ft {deal.deadlinePhrase}{" "}
+              (reg. ${offer.regularPricePerFoot}/ft) · Free on-site measure
             </span>
           </p>
         </div>

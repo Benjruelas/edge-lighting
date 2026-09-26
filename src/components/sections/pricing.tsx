@@ -17,8 +17,8 @@ export function Pricing() {
         <Reveal>
           <SectionHeading
             eyebrow="PRICING"
-            title="Transparent by the foot — Thanksgiving deal locked in."
-            description={`Regular rate $${offer.regularPricePerFoot}/ft. Through ${deal.endsLabel}, lock in $${offer.pricePerFoot}/ft all-in with the controller included.`}
+            title={`Transparent by the foot — lock in $${offer.pricePerFoot} before Thanksgiving.`}
+            description={`Regular rate $${offer.regularPricePerFoot}/ft. $${offer.pricePerFoot}/ft all-in ${deal.deadlinePhrase}, controller included.`}
           />
         </Reveal>
 
@@ -54,7 +54,7 @@ export function Pricing() {
                   <span className="line-through">
                     {formatUsd(pkg.regularPriceFrom)}
                   </span>{" "}
-                  regular · {deal.badge} through {deal.endsLabel}
+                  regular · {deal.badge}
                 </p>
                 <div className="my-5 h-px w-full light-line opacity-60" />
                 <p className="flex-1 text-sm leading-relaxed text-muted-foreground">

@@ -55,11 +55,10 @@ export function PriceEstimator() {
       </div>
 
       <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-        Regular rate ${REGULAR_PRICE_PER_FOOT}/ft. {deal.badge}: $
-        {PRICE_PER_FOOT}/ft through {deal.endsLabel} — track, LEDs, controller,
-        color-match, and install. Two-story, steep, or complex hip roofs may
-        adjust after your free measure. Final quote comes from the on-site
-        measure.
+        Regular rate ${REGULAR_PRICE_PER_FOOT}/ft. ${PRICE_PER_FOOT}/ft{" "}
+        {deal.deadlinePhrase} — track, LEDs, controller, color-match, and
+        install. Two-story, steep, or complex hip roofs may adjust after your
+        free measure. Final quote comes from the on-site measure.
       </p>
     </div>
   );

@@ -54,7 +54,7 @@ export function Compare() {
           <SectionHeading
             eyebrow="COMPARISON"
             title="Same dream outcome. Best deal in DFW."
-            description={`Franchise markups vs. a local roofing crew. Regular $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft through Thanksgiving.`}
+            description={`Franchise markups vs. a local roofing crew. Regular $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft if you order before Thanksgiving.`}
           />
         </Reveal>
 

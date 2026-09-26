@@ -62,7 +62,7 @@ export function ValueStack() {
                   </span>
                   {" — "}
                   <span className="font-semibold text-primary">
-                    ${offer.pricePerFoot}/ft through {deal.endsLabel}
+                    ${offer.pricePerFoot}/ft {deal.deadlinePhrase}
                   </span>{" "}
                   all-inclusive.
                 </div>
