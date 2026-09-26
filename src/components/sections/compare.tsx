@@ -8,7 +8,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
-import { comparisons } from "@/lib/offer";
+import { comparisons, DEAL_PRICE_PER_FOOT, REGULAR_PRICE_PER_FOOT } from "@/lib/offer";
 import { cn } from "@/lib/utils";
 
 const optionMeta: Record<
@@ -54,7 +54,7 @@ export function Compare() {
           <SectionHeading
             eyebrow="COMPARISON"
             title="Same dream outcome. Best deal in DFW."
-            description="Franchise markups vs. a local roofing crew. See why Edge Lighting wins on all-in price."
+            description={`Franchise markups vs. a local roofing crew. Regular $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft if you order before Thanksgiving.`}
           />
         </Reveal>
 

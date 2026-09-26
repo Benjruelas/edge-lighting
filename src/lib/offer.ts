@@ -1,4 +1,18 @@
-export const PRICE_PER_FOOT = 24.25;
+export const REGULAR_PRICE_PER_FOOT = 28;
+export const DEAL_PRICE_PER_FOOT = 24.25;
+/** Active quote rate while the before-Thanksgiving promo is running. */
+export const PRICE_PER_FOOT = DEAL_PRICE_PER_FOOT;
+
+export const deal = {
+  active: true,
+  /** Deadline name shown in UI (order must be placed before this). */
+  endsLabel: "Thanksgiving",
+  /** ISO date for Thanksgiving 2026 (Thursday, Nov 26). */
+  endsOn: "2026-11-26",
+  badge: "Order before Thanksgiving",
+  deadlinePhrase: "if you order before Thanksgiving",
+  savingsLabel: `Save $${(REGULAR_PRICE_PER_FOOT - DEAL_PRICE_PER_FOOT).toFixed(2)}/ft`,
+} as const;
 
 export const offer = {
   name: "The After-Dark Curb Appeal System",
@@ -9,13 +23,16 @@ export const offer = {
     "This is not a lighting franchise. It is soffit lighting installed by the company that already works on DFW roofs, fascia, and eaves — so the workmanship guarantee can last as long as you own the home.",
   starvingCrowd:
     "DFW homeowners who want a home that looks expensive after dark — holidays, Cowboys nights, everyday warm white — without ladders, clip-on lights, or a national-franchise markup.",
+  /** Regular published rate before the promotional deal. */
+  regularPricePerFoot: REGULAR_PRICE_PER_FOOT,
+  /** Active promotional rate while the deal runs. */
   pricePerFoot: PRICE_PER_FOOT,
   bestDeal:
-    "Best all-in deal in DFW — pro aluminum-track lighting at $24.25/ft with the controller included.",
+    `Normally $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft all-in ${deal.deadlinePhrase}, controller included.`,
   financingNote:
     "As low as ~$99/mo on a typical Street Face package via third-party financing (subject to approval).",
   scarcity:
-    "Only 6 Edge Lighting installs per month in DFW. Holiday calendars fill by October.",
+    `$${DEAL_PRICE_PER_FOOT}/ft only ${deal.deadlinePhrase}. Only 6 Edge Lighting installs per month in DFW — holiday calendars fill fast.`,
 } as const;
 
 export const coreIncludes = [
@@ -70,9 +87,10 @@ export const packages = [
     id: "street-face",
     name: "Street Face",
     priceFrom: 2590,
+    regularPriceFrom: 2990,
     feet: "90–110 ft",
     description:
-      "The street-facing eave — maximum curb appeal per dollar, at DFW’s best all-in rate.",
+      "The street-facing eave — maximum curb appeal per dollar when you order before Thanksgiving.",
     highlight: false,
     bestFor: "Front-only glow & holiday curb appeal",
   },
@@ -80,9 +98,10 @@ export const packages = [
     id: "curb-wings",
     name: "Curb + Wings",
     priceFrom: 3975,
+    regularPriceFrom: 4590,
     feet: "150–170 ft",
     description:
-      "Front plus the visible side returns that complete the look from the street — still the best deal in DFW.",
+      "Front plus the visible side returns that complete the look from the street — lock it in if you order before Thanksgiving.",
     highlight: true,
     bestFor: "Most DFW suburban homes",
   },
@@ -90,6 +109,7 @@ export const packages = [
     id: "whole-home",
     name: "Whole Home Halo",
     priceFrom: 5625,
+    regularPriceFrom: 6490,
     feet: "220–240 ft",
     description:
       "Full perimeter wrap for estates and homeowners who want every angle lit — without franchise pricing.",
@@ -161,7 +181,7 @@ export const processSteps = [
 export const comparisons = [
   {
     name: "Edge Lighting by All Slopes",
-    price: "$24.25/ft all-in",
+    price: `$${DEAL_PRICE_PER_FOOT}/ft before Thanksgiving (reg. $${REGULAR_PRICE_PER_FOOT})`,
     controller: "Included",
     warranty: "Lifetime workmanship · 5-yr parts",
     who: "Local roofing & soffit crew",
@@ -203,12 +223,12 @@ export const faqs = [
     a: "Most single-story Street Face and Curb + Wings jobs finish in one day. Larger Whole Home Halo installs may take 1–2 days depending on footage and roof complexity.",
   },
   {
-    q: "What does $24.25 per foot include?",
-    a: "Track, LEDs, controller, color-match, labor, app setup, and the full bonus stack listed on this page — that’s why it’s the best all-in deal in DFW versus franchise quotes that hide controller fees. Two-story, steep, or complex hip roofs may adjust after the free measure.",
+    q: `What does $${DEAL_PRICE_PER_FOOT} per foot include?`,
+    a: `Our regular rate is $${REGULAR_PRICE_PER_FOOT}/ft. If you order before ${deal.endsLabel}, lock in $${DEAL_PRICE_PER_FOOT}/ft all-in — track, LEDs, controller, color-match, labor, app setup, and the full bonus stack. Two-story, steep, or complex hip roofs may adjust after the free measure.`,
   },
   {
     q: "Why is Edge Lighting priced lower than franchise brands?",
-    a: "We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — just $24.25/ft all-in. Same class of aluminum-track system, better DFW value.",
+    a: `We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — regular rate $${REGULAR_PRICE_PER_FOOT}/ft, currently $${DEAL_PRICE_PER_FOOT}/ft ${deal.deadlinePhrase}. Same class of aluminum-track system, better DFW value.`,
   },
   {
     q: "Can I finance it?",

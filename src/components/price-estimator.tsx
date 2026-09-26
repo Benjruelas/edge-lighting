@@ -2,11 +2,18 @@
 
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
-import { estimateFromFeet, formatUsd, PRICE_PER_FOOT } from "@/lib/offer";
+import {
+  deal,
+  estimateFromFeet,
+  formatUsd,
+  PRICE_PER_FOOT,
+  REGULAR_PRICE_PER_FOOT,
+} from "@/lib/offer";
 
 export function PriceEstimator() {
   const [feet, setFeet] = useState(150);
   const estimate = estimateFromFeet(feet);
+  const regularEstimate = feet * REGULAR_PRICE_PER_FOOT;
 
   return (
     <div className="surface-panel p-5 sm:p-8">
@@ -24,7 +31,9 @@ export function PriceEstimator() {
             {formatUsd(estimate)}
           </p>
           <p className="mt-1 text-xs text-muted-foreground">
-            {feet} ft × ${PRICE_PER_FOOT}/ft
+            {feet} ft × ${PRICE_PER_FOOT}/ft ·{" "}
+            <span className="line-through">{formatUsd(regularEstimate)}</span>{" "}
+            at ${REGULAR_PRICE_PER_FOOT}/ft
           </p>
         </div>
       </div>
@@ -46,10 +55,10 @@ export function PriceEstimator() {
       </div>
 
       <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-        Best all-in deal in DFW at ${PRICE_PER_FOOT}/ft — track, LEDs,
-        controller, color-match, and install. Two-story, steep, or complex hip
-        roofs may adjust after your free measure. Final quote comes from the
-        on-site measure.
+        Regular rate ${REGULAR_PRICE_PER_FOOT}/ft. ${PRICE_PER_FOOT}/ft{" "}
+        {deal.deadlinePhrase} — track, LEDs, controller, color-match, and
+        install. Two-story, steep, or complex hip roofs may adjust after your
+        free measure. Final quote comes from the on-site measure.
       </p>
     </div>
   );

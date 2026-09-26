@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { guarantees, offer, packages, PRICE_PER_FOOT } from "@/lib/offer";
+import {
+  deal,
+  guarantees,
+  offer,
+  packages,
+  PRICE_PER_FOOT,
+  REGULAR_PRICE_PER_FOOT,
+} from "@/lib/offer";
 import { site } from "@/lib/site";
 
 export const metadata = {
@@ -42,16 +49,20 @@ export default function TermsPage() {
           <section className="space-y-2 text-sm leading-relaxed text-muted-foreground">
             <h2 className="font-heading text-2xl text-foreground">2. Pricing</h2>
             <p>
-              Published rate is ${PRICE_PER_FOOT} per linear foot of installed
-              lighting, all-inclusive of track, LEDs, controller, color-match,
-              labor, and the bonus stack advertised on the website. Package
-              starting prices:
+              Regular published rate is ${REGULAR_PRICE_PER_FOOT} per linear foot
+              of installed lighting, all-inclusive of track, LEDs, controller,
+              color-match, labor, and the bonus stack advertised on the website.
+              If you order before {deal.endsLabel} ({deal.endsOn}), the
+              promotional rate is ${PRICE_PER_FOOT} per linear foot for
+              qualified installs booked under the deal. Package starting prices
+              during the deal:
             </p>
             <ul className="list-disc space-y-1 pl-5">
               {packages.map((pkg) => (
                 <li key={pkg.id}>
                   <strong className="text-foreground">{pkg.name}</strong> — from $
-                  {pkg.priceFrom.toLocaleString()} (typical {pkg.feet})
+                  {pkg.priceFrom.toLocaleString()} during the deal (regular from $
+                  {pkg.regularPriceFrom.toLocaleString()}; typical {pkg.feet})
                 </li>
               ))}
             </ul>
