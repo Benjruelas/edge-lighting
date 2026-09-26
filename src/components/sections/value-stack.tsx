@@ -6,6 +6,7 @@ import {
   bonusTotal,
   bonuses,
   coreIncludes,
+  deal,
   formatUsd,
   offer,
 } from "@/lib/offer";
@@ -55,9 +56,13 @@ export function ValueStack() {
                   ))}
                 </ul>
                 <div className="mt-6 rounded-xl border border-primary/30 bg-primary/10 px-4 py-3 text-sm">
-                  Published rate:{" "}
+                  Regular rate{" "}
+                  <span className="line-through text-muted-foreground">
+                    ${offer.regularPricePerFoot}/ft
+                  </span>
+                  {" — "}
                   <span className="font-semibold text-primary">
-                    ${offer.pricePerFoot}/linear foot
+                    ${offer.pricePerFoot}/ft through {deal.endsLabel}
                   </span>{" "}
                   all-inclusive.
                 </div>

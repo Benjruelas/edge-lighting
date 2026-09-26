@@ -1,6 +1,7 @@
 import { AmbientGlow } from "@/components/ambient-glow";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { deal, offer } from "@/lib/offer";
 
 const problems = [
   {
@@ -15,7 +16,7 @@ const problems = [
   },
   {
     title: "Franchise sticker shock",
-    body: "National brands often quote $25–$40/ft — then add $650–$850 for a controller. Edge Lighting is $24.25/ft all-in — the best deal in DFW for the same class of system.",
+    body: `National brands often quote $25–$40/ft — then add $650–$850 for a controller. Edge Lighting is $${offer.regularPricePerFoot}/ft all-in — and through ${deal.endsLabel}, lock in $${offer.pricePerFoot}/ft for the same class of system.`,
     visual: "from-orange-900/20 to-transparent",
   },
 ];

@@ -29,7 +29,7 @@ export function LeadCta() {
           <SectionHeading
             eyebrow="FREE ON-SITE MEASURE"
             title="Get a quote. Keep the risk on us."
-            description="Tell us about your home. We’ll call to schedule a free on-site measure — footage, package recommendation, and a clear quote at DFW’s best all-in rate. Don’t love it? You pay nothing."
+            description="Tell us about your home. We’ll call to schedule a free on-site measure — footage, package recommendation, and a clear quote before the Thanksgiving deal ends. Don’t love it? You pay nothing."
           />
           <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
             {[

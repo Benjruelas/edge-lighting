@@ -186,7 +186,10 @@ export default async function OpenGraphImage() {
               letterSpacing: 0.5,
             }}
           >
-            <span>${offer.pricePerFoot}/ft · Best deal in DFW</span>
+            <span>
+              ${offer.pricePerFoot}/ft through Thanksgiving (reg. $
+              {offer.regularPricePerFoot})
+            </span>
             <span>Free on-site measure</span>
             <span>{site.phoneDisplay}</span>
           </div>

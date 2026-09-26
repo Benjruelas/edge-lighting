@@ -3,7 +3,7 @@ import { PriceEstimator } from "@/components/price-estimator";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
-import { formatUsd, offer, packages } from "@/lib/offer";
+import { deal, formatUsd, offer, packages } from "@/lib/offer";
 import { cn } from "@/lib/utils";
 
 export function Pricing() {
@@ -17,8 +17,8 @@ export function Pricing() {
         <Reveal>
           <SectionHeading
             eyebrow="PRICING"
-            title="Best all-in deal in DFW — transparent by the foot."
-            description={`$${offer.pricePerFoot}/ft with the controller included. Below franchise sticker shock, without cutting the aluminum-track quality.`}
+            title="Transparent by the foot — Thanksgiving deal locked in."
+            description={`Regular rate $${offer.regularPricePerFoot}/ft. Through ${deal.endsLabel}, lock in $${offer.pricePerFoot}/ft all-in with the controller included.`}
           />
         </Reveal>
 
@@ -49,6 +49,14 @@ export function Pricing() {
                 <p className="mt-5 font-heading text-4xl text-primary sm:mt-6 sm:text-5xl">
                   {formatUsd(pkg.priceFrom)}
                   <span className="text-base text-muted-foreground"> from</span>
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  <span className="line-through">
+                    {formatUsd(pkg.regularPriceFrom)}
+                  </span>{" "}
+                  <span className="text-primary/90">
+                    {deal.badge} through {deal.endsLabel}
+                  </span>
                 </p>
                 <div className="my-5 h-px w-full light-line opacity-60" />
                 <p className="flex-1 text-sm leading-relaxed text-muted-foreground">

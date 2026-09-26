@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { offer } from "@/lib/offer";
+import { deal, offer } from "@/lib/offer";
 import { site } from "@/lib/site";
 
 export function Hero() {
@@ -41,8 +41,12 @@ export function Hero() {
           </h1>
           <p className="hero-enter hero-enter-delay-3 mt-4 max-w-lg text-[15px] leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
             Aluminum-track LED soffit lighting for Mansfield &amp; {site.region}
-            — installed in one day by a roofing crew. Best all-in deal in DFW at
-            ${offer.pricePerFoot}/ft.
+            — installed in one day by a roofing crew. Normally $
+            {offer.regularPricePerFoot}/ft —{" "}
+            <span className="text-foreground">
+              ${offer.pricePerFoot}/ft through {deal.endsLabel}
+            </span>
+            .
           </p>
           <div className="hero-enter hero-enter-delay-4 mt-7 flex w-full flex-col gap-2.5 sm:mt-9 sm:flex-row sm:items-center sm:gap-3">
             <Button
@@ -66,11 +70,13 @@ export function Hero() {
           </div>
           <p className="hero-enter hero-enter-delay-4 mt-4 text-xs leading-relaxed text-muted-foreground/90 sm:mt-5 sm:text-sm">
             <span className="sm:hidden">
-              Best deal in DFW · ${offer.pricePerFoot}/ft all-in · Free measure
+              {deal.badge} · ${offer.pricePerFoot}/ft (reg. $
+              {offer.regularPricePerFoot}) · Free measure
             </span>
             <span className="hidden sm:inline">
-              {offer.name} · Best deal in DFW at ${offer.pricePerFoot}/ft
-              all-inclusive · Free on-site measure
+              {offer.name} · {deal.badge}: ${offer.pricePerFoot}/ft through{" "}
+              {deal.endsLabel} (reg. ${offer.regularPricePerFoot}/ft) · Free
+              on-site measure
             </span>
           </p>
         </div>
