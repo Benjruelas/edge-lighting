@@ -54,9 +54,7 @@ export function Pricing() {
                   <span className="line-through">
                     {formatUsd(pkg.regularPriceFrom)}
                   </span>{" "}
-                  <span className="text-primary/90">
-                    through {deal.endsLabel}
-                  </span>
+                  regular · {deal.badge} through {deal.endsLabel}
                 </p>
                 <div className="my-5 h-px w-full light-line opacity-60" />
                 <p className="flex-1 text-sm leading-relaxed text-muted-foreground">

@@ -31,9 +31,9 @@ export function PriceEstimator() {
             {formatUsd(estimate)}
           </p>
           <p className="mt-1 text-xs text-muted-foreground">
-            <span className="line-through">{formatUsd(regularEstimate)}</span>
-            {" · "}
-            {feet} ft × ${PRICE_PER_FOOT}/ft
+            {feet} ft × ${PRICE_PER_FOOT}/ft ·{" "}
+            <span className="line-through">{formatUsd(regularEstimate)}</span>{" "}
+            at ${REGULAR_PRICE_PER_FOOT}/ft
           </p>
         </div>
       </div>
