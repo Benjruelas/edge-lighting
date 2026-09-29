@@ -3,7 +3,6 @@ import type { LucideIcon } from "lucide-react";
 import {
   CalendarRange,
   Hammer,
-  MoonStar,
   PencilRuler,
   SunMedium,
 } from "lucide-react";
@@ -15,7 +14,6 @@ import { guarantees } from "@/lib/offer";
 const guaranteeIcons: Record<(typeof guarantees)[number]["title"], LucideIcon> =
   {
     "Free On-Site Measure": PencilRuler,
-    "30-Night Make-It-Right": MoonStar,
     "Lifetime Workmanship": Hammer,
     "5-Year Parts": CalendarRange,
     "Texas Weather Promise": SunMedium,
@@ -32,12 +30,12 @@ export function Guarantees() {
         <Reveal>
           <SectionHeading
             eyebrow="RISK REVERSAL"
-            title="Five guarantees. You keep the upside. We keep the risk."
+            title="Four guarantees. You keep the upside. We keep the risk."
             description="Custom installed lighting shouldn’t be “no questions asked refund.” It should be service guarantees that make saying yes feel safe."
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {guarantees.map((g, i) => {
             const Icon = guaranteeIcons[g.title];
             return (

@@ -126,12 +126,6 @@ export const guarantees = [
       "We measure your eaves, recommend the right package, and quote the job. Don’t love it? You pay nothing.",
   },
   {
-    title: "30-Night Make-It-Right",
-    type: "Service guarantee",
-    description:
-      "For 30 nights after install, we return at no charge to fix alignment, brightness, dead nodes, or scene setup.",
-  },
-  {
     title: "Lifetime Workmanship",
     type: "As long as you own the home",
     description:
@@ -236,7 +230,7 @@ export const faqs = [
   },
   {
     q: "What if a light goes out?",
-    a: "Call us. The 30-Night Make-It-Right covers early issues at no charge. After that, your 5-Year Parts and Lifetime Workmanship warranties apply as described in our terms.",
+    a: "Call us. Your 5-Year Parts warranty covers LEDs, controller, and track components, and Lifetime Workmanship covers the install itself — we come back and fix it as described in our terms.",
   },
   {
     q: "Do you only light the front?",
