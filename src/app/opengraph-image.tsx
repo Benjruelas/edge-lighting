@@ -187,8 +187,8 @@ export default async function OpenGraphImage() {
             }}
           >
             <span>
-              ${offer.pricePerFoot}/ft if you order before Thanksgiving (reg. $
-              {offer.regularPricePerFoot})
+              Starting at ${offer.pricePerFoot}/ft if you order before
+              Thanksgiving (reg. ${offer.regularPricePerFoot})
             </span>
             <span>Free on-site measure</span>
             <span>{site.phoneDisplay}</span>

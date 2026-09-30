@@ -53,7 +53,7 @@ export default function TermsPage() {
               of installed lighting, all-inclusive of track, LEDs, controller,
               color-match, labor, and the bonus stack advertised on the website.
               If you order before {deal.endsLabel} ({deal.endsOn}), the
-              promotional rate is ${PRICE_PER_FOOT} per linear foot for
+              promotional rate starts at ${PRICE_PER_FOOT} per linear foot for
               qualified installs booked under the deal. Package starting prices
               during the deal:
             </p>
