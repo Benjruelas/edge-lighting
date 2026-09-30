@@ -28,11 +28,11 @@ export const offer = {
   /** Active promotional rate while the deal runs. */
   pricePerFoot: PRICE_PER_FOOT,
   bestDeal:
-    `Normally $${REGULAR_PRICE_PER_FOOT}/ft — $${DEAL_PRICE_PER_FOOT}/ft all-in ${deal.deadlinePhrase}, controller included.`,
+    `Normally $${REGULAR_PRICE_PER_FOOT}/ft — starting at $${DEAL_PRICE_PER_FOOT}/ft all-in ${deal.deadlinePhrase}, controller included.`,
   financingNote:
     "As low as ~$99/mo on a typical Street Face package via third-party financing (subject to approval).",
   scarcity:
-    `$${DEAL_PRICE_PER_FOOT}/ft only ${deal.deadlinePhrase}. Only 6 Edge Lighting installs per month in DFW — holiday calendars fill fast.`,
+    `Starting at $${DEAL_PRICE_PER_FOOT}/ft only ${deal.deadlinePhrase}. Only 6 Edge Lighting installs per month in DFW — holiday calendars fill fast.`,
 } as const;
 
 export const coreIncludes = [
@@ -175,7 +175,7 @@ export const processSteps = [
 export const comparisons = [
   {
     name: "Edge Lighting by All Slopes",
-    price: `$${DEAL_PRICE_PER_FOOT}/ft before Thanksgiving (reg. $${REGULAR_PRICE_PER_FOOT})`,
+    price: `Starting at $${DEAL_PRICE_PER_FOOT}/ft before Thanksgiving (reg. $${REGULAR_PRICE_PER_FOOT})`,
     controller: "Included",
     warranty: "Lifetime workmanship · 5-yr parts",
     who: "Local roofing & soffit crew",
@@ -218,11 +218,11 @@ export const faqs = [
   },
   {
     q: `What does $${DEAL_PRICE_PER_FOOT} per foot include?`,
-    a: `Our regular rate is $${REGULAR_PRICE_PER_FOOT}/ft. If you order before ${deal.endsLabel}, lock in $${DEAL_PRICE_PER_FOOT}/ft all-in — track, LEDs, controller, color-match, labor, app setup, and the full bonus stack. Two-story, steep, or complex hip roofs may adjust after the free measure.`,
+    a: `Our regular rate is $${REGULAR_PRICE_PER_FOOT}/ft. If you order before ${deal.endsLabel}, lock in pricing starting at $${DEAL_PRICE_PER_FOOT}/ft all-in — track, LEDs, controller, color-match, labor, app setup, and the full bonus stack. Two-story, steep, or complex hip roofs may adjust after the free measure.`,
   },
   {
     q: "Why is Edge Lighting priced lower than franchise brands?",
-    a: `We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — regular rate $${REGULAR_PRICE_PER_FOOT}/ft, currently $${DEAL_PRICE_PER_FOOT}/ft ${deal.deadlinePhrase}. Same class of aluminum-track system, better DFW value.`,
+    a: `We’re a local roofing & exteriors crew, not a national lighting franchise. No franchise fees, no separate controller upcharge — regular rate $${REGULAR_PRICE_PER_FOOT}/ft, currently starting at $${DEAL_PRICE_PER_FOOT}/ft ${deal.deadlinePhrase}. Same class of aluminum-track system, better DFW value.`,
   },
   {
     q: "Can I finance it?",

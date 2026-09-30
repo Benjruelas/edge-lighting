@@ -17,8 +17,8 @@ export function Pricing() {
         <Reveal>
           <SectionHeading
             eyebrow="PRICING"
-            title={`Transparent by the foot — lock in $${offer.pricePerFoot} before Thanksgiving.`}
-            description={`Regular rate $${offer.regularPricePerFoot}/ft. $${offer.pricePerFoot}/ft all-in ${deal.deadlinePhrase}, controller included.`}
+            title={`Transparent by the foot — starting at $${offer.pricePerFoot} before Thanksgiving.`}
+            description={`Regular rate $${offer.regularPricePerFoot}/ft. Starting at $${offer.pricePerFoot}/ft all-in ${deal.deadlinePhrase}, controller included.`}
           />
         </Reveal>
 
